@@ -1,0 +1,35 @@
+// barra de navegación
+%header{
+    background-color: black;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px;
+}
+%disposicion{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 10px;
+}
+%disposicion-li{
+    display: inline-block;
+    position: relative;
+}
+%disposicion-a{
+    text-decoration: none;
+    padding: 0 20px;
+    margin: 0 20px;
+}
+
+// footer
+%footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+
+

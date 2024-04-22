@@ -1,0 +1,54 @@
+/* ------pag index */
+#body-index{
+    background-image: url(img/img-surf2.jpg);
+    background-repeat: map-get($body-index, back-repeat);
+    background-position: map-get($body-index, back-position);
+    background-size: map-get($body-index, back-size);
+    @include tamañoImagenes (100%, 100%, cover);
+    .main-index{
+        color: $col-1c;
+        div{
+            .h2-index{
+                font-weight: nth($font-weight, 1);
+                font-size: nth($font-size, 1);
+                margin-top: nth($margenes, 3);
+                text-shadow: $text-shad;
+                text-align: $text-alig;
+            }
+            span{
+                .h2-index-dos{
+                   font-weight: nth($font-weight, 2); 
+                   font-size: nth($font-size, 1);
+                   text-shadow: $text-shad;
+                   font-style: italic;
+                   margin-right: nth($margenes, 3);   
+                }
+            }
+        }
+        p{
+            .p-index{
+                font-weight: nth($font-weight, 2);
+                font-size: nth($font-size, 2);
+                text-shadow: 1px;
+                text-align: $text-alig;
+            }
+            .margin-right{
+                margin-right: nth($margenes, 4);
+            }
+            .p-index-dos{
+                font-weight: nth($font-weight, 3);
+                font-size: nth($font-size, 3);
+                text-align: $text-alig;
+                margin: 15rem 8px 15px 8px;
+                border-style: solid;
+                border-radius: 30px;
+                background-color: $col-4c;
+                transition: all 0.5s;
+                &:hover{
+                    transition: all 0.5s;
+                    background-color: $col-5c;
+                }
+            }
+        }
+    }
+}

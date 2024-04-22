@@ -1,0 +1,42 @@
+/* ------reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+}
+
+/* ------barra de navegación */
+header{
+    @extend %header;
+    h1{
+        color: $col-1c;
+    }
+    nav{
+        div{
+            @extend %disposicion;
+            ul{
+                li{
+                    @extend %disposicion-li; 
+                    a{
+                        @extend %disposicion-a;
+                        color: $col-1c;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ------footer */
+footer{
+    background-color: $col-3c;
+    color: $col-1c;
+    @extend %footer;
+    margin-top: nth($margenes, 1);
+    .p-footer{
+        align-items: $alig-items;
+        margin-top: nth($margenes, 2);
+    }
+}

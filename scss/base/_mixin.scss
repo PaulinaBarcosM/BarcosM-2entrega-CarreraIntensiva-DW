@@ -1,0 +1,5 @@
+@mixin tamañoImagenes ($widt, $heig, $brbox){
+    width: $widt;
+    height: $heig;
+    box-sizing: $brbox;
+}
