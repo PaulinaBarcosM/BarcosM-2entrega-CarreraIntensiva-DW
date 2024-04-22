@@ -103,19 +103,26 @@ footer{
     background-color: rgb(34, 34, 34);
 }
 
+
 /* ------pag nosotros */
-#carousel-bs{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;  
-    /* SACAR CARROUSEL PARA COMPU O ACHICARLO */
+/* main */
+.main-oculto{
+    display: none;
 }
+.img-nosotros{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+/* article */
 .texto-alineado{
     text-align: center;
+    margin: 30px 10px 10px 10px;
 }
 .color{
     color:#6B6B6B;
 }
+
 
 /* ------pag surf/snow/wake */
 /* main */
@@ -155,6 +162,7 @@ footer{
     background-color: #6B6B6B;
 }
 
+
 /* ------media querie para TABLET */
 @media only screen and (min-width:600px){
     /* ------index */
@@ -178,6 +186,28 @@ footer{
         margin-right: 20%;
         margin-left: 20%;
         font-size: 40px;
+    }
+
+    /* ------nosotros */
+    /* main */
+    .main-oculto{
+        display: block;
+    }
+    .contenedor-img{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+        margin: 20px 5px 5px 5px;
+    }
+    .img-nosotros-main{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* section */
+    .carousel-oculto{
+        display: none;
     }
 
     /* ------surf */
@@ -229,8 +259,17 @@ footer{
         margin-right: 60%;
         margin-left: 5%;
     }
+    
+    /* ------nosotros */
+    /* article */
+    .h3-desktop{
+        margin-top: 40px;
+        margin-right: 30%;
+        margin-left: 30%;
+        margin-bottom: 50px;
+    }
 
-    /* -------surf */
+    /* ------surf */
     /* main */
     .img-surf4{
         display: block;
