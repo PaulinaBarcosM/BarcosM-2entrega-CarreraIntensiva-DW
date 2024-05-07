@@ -1,6 +1,3 @@
-// FIJARSE LAS CLASES REPETIDAS COMO LAS ORGANIZAMOS. LAS PONEMOS EN LA PAGINA RESET PORQUE SON GENERALES? 
-
-
 
 /* ------pag index */
 #body-index{
@@ -33,17 +30,67 @@
 /* ------pag nosotros */
 /* main */
 .main-oculto{
-    display: none;
+    display: $dis-none;
 }
 /* section */
 .img-nosotros{
     @include tamañoImagenes (100%, 100vh, cover);
 }
 /* article */
-.texto-alineado{
-    text-align: $text-alig;
-    margin: 30px 10px 10px 10px;
+article{
+    .texto-alineado{
+        text-align: $text-alig;
+        margin: 30px 10px 10px 10px;
+    }
+    .color{
+        color: $col-2c;
+    }
 }
-.color{
-    color: $col-2c;
+
+/* ------pag surf/snow/wake */
+/* main */
+main{
+    p{
+        .p-deportes{
+            margin: 15px 5px 20px 5px;
+        }
+    }
+    div{
+        .img-deportes{
+            width: 100%;
+            height: 100%;
+        }
+        .img-deportes-dos{
+            display: $dis-none;
+        }
+    }
 }
+/* section */
+section{
+    .contenedor-hijo-deportes{
+        display: grid;
+        justify-content: center;
+        align-items: $alig-items;
+        margin-top: nth($margenes, 5);
+        .card{
+            text-align: $text-alig;
+            .tipografia{
+                color: $col-3c;
+                font-size: nth($font-size, 4);
+            }
+            .btn{
+                color: $col-3c;
+            }
+            .btn-primary{
+                color: $col-1c;
+                background-color: $col-3c;
+                border: $col-3c;
+                &:hover{
+                    background-color: $col-2c;
+                }
+            }
+        }  
+    }
+}
+
+
