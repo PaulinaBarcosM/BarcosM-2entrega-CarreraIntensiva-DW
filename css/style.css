@@ -50,6 +50,39 @@ header nav div ul li a {
   color: whitesmoke;
 }
 
+/* ------class generales */
+/* h2 */
+.h2-general {
+  font-weight: 900;
+  font-size: 4rem;
+  margin-top: 2rem;
+  text-shadow: 1px 2px 1px 1px;
+  text-align: center;
+}
+
+/* párrafos */
+.p-general {
+  font-weight: 600;
+  font-size: 25px;
+  text-shadow: 1px;
+  text-align: center;
+}
+
+.p-general-dos {
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  margin: 15rem 8px 15px 8px;
+  border-style: solid;
+  border-radius: 30px;
+  background-color: transparent;
+  transition: all 0.5s;
+}
+.p-general-dos:hover {
+  transition: all 0.5s;
+  background-color: rgb(34, 34, 34);
+}
+
 /* ------footer */
 footer {
   background-color: black;
@@ -74,13 +107,6 @@ footer .p-footer {
 #body-index .main-index {
   color: whitesmoke;
 }
-#body-index .main-index div .h2-general {
-  font-weight: 900;
-  font-size: 4rem;
-  margin-top: 2rem;
-  text-shadow: 1px 2px 1px 1px;
-  text-align: center;
-}
 #body-index .main-index div span .h2-index-dos {
   font-weight: 600;
   font-size: 4rem;
@@ -88,28 +114,8 @@ footer .p-footer {
   font-style: italic;
   margin-right: 2rem;
 }
-#body-index .main-index .p-general {
-  font-weight: 600;
-  font-size: 25px;
-  text-shadow: 1px;
-  text-align: center;
-}
-#body-index .main-index .margin-right {
+#body-index .main-index p .margin-right {
   margin-right: 10px;
-}
-#body-index .main-index .p-general-dos {
-  font-weight: 700;
-  font-size: 3rem;
-  text-align: center;
-  margin: 15rem 8px 15px 8px;
-  border-style: solid;
-  border-radius: 30px;
-  background-color: transparent;
-  transition: all 0.5s;
-}
-#body-index .main-index .p-general-dos:hover {
-  transition: all 0.5s;
-  background-color: rgb(34, 34, 34);
 }
 
 /* ------pag nosotros */

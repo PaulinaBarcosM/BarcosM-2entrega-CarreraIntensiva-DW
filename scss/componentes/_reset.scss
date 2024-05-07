@@ -29,6 +29,37 @@ header{
     }
 }
 
+/* ------class generales */
+/* h2 */
+.h2-general{
+    font-weight: nth($font-weight, 1);
+    font-size: nth($font-size, 1);
+    margin-top: nth($margenes, 3);
+    text-shadow: $text-shad;
+    text-align: $text-alig;
+}
+/* párrafos */
+.p-general{
+    font-weight: nth($font-weight, 2);
+    font-size: nth($font-size, 2);
+    text-shadow: 1px;
+    text-align: $text-alig;
+}
+.p-general-dos{
+    font-weight: nth($font-weight, 3);
+    font-size: nth($font-size, 3);
+    text-align: $text-alig;
+    margin: 15rem 8px 15px 8px;
+    border-style: solid;
+    border-radius: 30px;
+    background-color: $col-4c;
+    transition: all 0.5s;
+    &:hover{
+        transition: all 0.5s;
+        background-color: $col-5c;
+    }
+}
+
 /* ------footer */
 footer{
     background-color: $col-3c;
