@@ -66,8 +66,17 @@ footer{
     color: $col-1c;
     @extend %footer;
     margin-top: nth($margenes, 1);
+    padding: 20px;
     .p-footer{
         align-items: $alig-items;
         margin-top: nth($margenes, 2);
+    }
+    .redes{
+        margin-left: nth($margenes, 2);
+        a{
+            color: $col-1c;
+            font-size: nth($font-size, 6);
+            letter-spacing: 10px;
+        }
     }
 }
