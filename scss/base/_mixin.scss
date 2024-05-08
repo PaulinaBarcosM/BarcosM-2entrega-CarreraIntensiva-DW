@@ -3,3 +3,8 @@
     height: $heig;
     box-sizing: $brbox;
 }
+
+@mixin altura-y-ancho ($widt, $heig){
+    width: $widt;
+    height: $heig;
+}

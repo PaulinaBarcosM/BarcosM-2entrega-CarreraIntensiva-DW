@@ -1,0 +1,137 @@
+/* ------media querie para TABLET */
+@media only screen and (min-width:600px){
+    /* ---index */
+    #body-index{
+        background-image: url(../img/img-wake1.jpg);
+        background-repeat: map-get($body-index, back-repeat);
+        background-position: map-get($body-index, back-position);
+        background-size: map-get($body-index, back-size);
+        @include tamañoImagenes (100%, 100%, cover);
+        .main-index{
+            .texto-h2-index{
+                margin-top: nth($margenes, 6);
+            }
+            .mq-p-index{
+                margin-left: nth($margenes, 7);
+            }
+            .p-general-dos{
+                margin-right: nth($margenes, 8);
+                margin-left: nth($margenes, 8);
+                font-size: nth($font-size, 5);
+            } 
+        }
+    }
+
+    /* ---nosotros */
+    /* main */
+    .main-oculto{
+        display: $dis-block;
+        .contenedor-img{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            margin: 20px 5px 5px 5px;
+            .img-nosotros-main{
+                @include tamañoImagenes (100%, 100%, cover);
+            }
+        }
+    }
+    /* section */
+    section{
+        .carousel-oculto{
+            display: $dis-none;
+        }
+    }
+
+    /* ---surf */
+    /* main */
+    main{
+        div{
+            .mq-img-deportes{
+                padding: 0 50px 0 50px;
+                @include altura-y-ancho (100%, 30%);
+            }
+        }
+    }
+
+    /* ---section surf/wake/snow */
+    section{
+        .contenedor-hijo-deportes{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            margin-left: nth($margenes, 9);
+            margin-right: nth($margenes, 9);
+            div{
+                .img-card{
+                    @include tamañoImagenes (100%, 50vh, cover);
+                }
+            }
+        }
+    }
+}
+
+/* ------media querie para DESKTOP */
+@media only screen and (min-width:1200px){
+    /* ---index */
+    #body-index{
+        background-image: url(../img/img-fogata.jpg);
+        background-repeat: map-get($body-index, back-repeat);
+        background-position: map-get($body-index, back-position);
+        background-size: map-get($body-index, back-size);
+        @include tamañoImagenes (100%, 100%, cover);
+        .main-index{
+            .texto-h2-index{
+                margin-right: nth($margenes, 10);
+            }
+            .mq-p-index{
+                margin-right: nth($margenes, 9);
+                margin-left: nth($margenes, 11);
+                display: $dis-block;
+            }
+            .p-general-dos{
+                margin-top: nth($margenes, 5);
+                margin-right: nth($margenes, 12);
+                margin-left: nth($margenes, 7);
+            }
+        }
+    }
+
+    /* ---nosotros */
+    /* article */
+    article{
+        .h3-desktop{
+            margin-top: nth($margenes, 5);
+            margin-right: nth($margenes, 13);
+            margin-left: nth($margenes, 13);
+            margin-bottom: nth($margenes, 14);
+        }
+    }
+
+    /* ---surf */
+    /* main */
+    main{
+        .contenedor-main-deportes{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+            .img-deportes-dos{
+                display: $dis-block;
+            }
+            .mq-img-deportes{
+                @include tamañoImagenes (100%, 100%, cover);
+                padding: 0;
+            }
+        }
+    }
+
+    /* ---section surf/wake/snow*/
+    section{
+        .contenedor-hijo-deportes{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}

@@ -45,6 +45,7 @@ header{
     text-shadow: 1px;
     text-align: $text-alig;
 }
+
 .p-general-dos{
     font-weight: nth($font-weight, 3);
     font-size: nth($font-size, 3);
@@ -59,6 +60,8 @@ header{
         background-color: $col-5c;
     }
 }
+
+
 
 /* ------footer */
 footer{
