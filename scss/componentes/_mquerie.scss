@@ -49,8 +49,27 @@
     main{
         div{
             .mq-img-deportes{
-                padding: 0 50px 0 50px;
+                padding: 0 15px 0 15px;
                 @include altura-y-ancho (100%, 30%);
+            }
+        }
+    }
+
+    /* ---article surf/wake/snow */
+    article{
+        .contenedor-article{
+            margin-left: nth($margenes, 16);
+            margin-right: nth($margenes, 16);
+            p{
+                font-size: nth($font-size, 5);
+                font-weight: nth($font-weight, 4);
+            }
+            .icono-avion{
+                margin-left: nth($margenes, 11);
+            }
+            .icono-snow{
+                font-size: nth($font-size, 6);
+                margin-right: nth($margenes, 11);
             }
         }
     }
@@ -60,8 +79,8 @@
         .contenedor-hijo-deportes{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
             gap: 10px;
+            margin-bottom: nth($margenes, 6);
             margin-left: nth($margenes, 9);
             margin-right: nth($margenes, 9);
             div{
@@ -69,6 +88,14 @@
                     @include tamañoImagenes (100%, 50vh, cover);
                 }
             }
+        }
+    }
+
+    /* ---main wake/snow */
+    main{
+        .p-wake-snow{
+            margin-left: nth($margenes, 14);
+            margin-right: nth($margenes, 14);
         }
     }
 }
@@ -116,17 +143,22 @@
         .contenedor-main-deportes{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 5px;
+            gap: 10px;
+            margin-left: nth($margenes, 4);
+            margin-right: nth($margenes, 4);
+            padding: 10px;
+            margin-top: nth($margenes, 5);
             .img-deportes-dos{
                 display: $dis-block;
             }
             .mq-img-deportes{
                 @include tamañoImagenes (100%, 100%, cover);
                 padding: 0;
+                box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
             }
         }
     }
-
+    
     /* ---section surf/wake/snow*/
     section{
         .contenedor-hijo-deportes{
