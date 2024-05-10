@@ -128,9 +128,6 @@ footer .redes a {
   font-style: italic;
   margin-right: 2rem;
 }
-#body-index .main-index p .margin-right {
-  margin-right: 10px;
-}
 
 /* ------pag nosotros */
 /* main */
@@ -256,6 +253,7 @@ section .contenedor-hijo-deportes .card .btn-primary:hover {
   }
   #body-index .main-index .mq-p-index {
     margin-left: 5%;
+    margin-right: 5%;
   }
   #body-index .main-index .p-general-dos {
     margin-right: 20%;
@@ -330,25 +328,29 @@ section .contenedor-hijo-deportes .card .btn-primary:hover {
 @media only screen and (min-width: 1200px) {
   /* ---index */
   #body-index {
-    background-image: url(../img/img-fogata.jpg);
+    background-image: url(../img/fondo-desktop-tres.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     box-sizing: cover;
   }
   #body-index .main-index .texto-h2-index {
-    margin-right: 65%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 5%;
   }
   #body-index .main-index .mq-p-index {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     margin-right: 50%;
-    margin-left: 60px;
-    display: block;
   }
   #body-index .main-index .p-general-dos {
     margin-top: 40px;
-    margin-right: 60%;
+    margin-right: 50%;
     margin-left: 5%;
   }
   /* ---nosotros */

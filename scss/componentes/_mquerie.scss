@@ -13,6 +13,7 @@
             }
             .mq-p-index{
                 margin-left: nth($margenes, 7);
+                margin-right: nth($margenes, 7);
             }
             .p-general-dos{
                 margin-right: nth($margenes, 8);
@@ -104,23 +105,27 @@
 @media only screen and (min-width:1200px){
     /* ---index */
     #body-index{
-        background-image: url(../img/img-fogata.jpg);
+        background-image: url(../img/fondo-desktop-tres.jpeg);
         background-repeat: map-get($body-index, back-repeat);
         background-position: map-get($body-index, back-position);
         background-size: map-get($body-index, back-size);
-        @include tamañoImagenes (100%, 100%, cover);
+        @include tamañoImagenes (100%, 100vh, cover);
         .main-index{
             .texto-h2-index{
-                margin-right: nth($margenes, 10);
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-left: nth($margenes, 7);
             }
             .mq-p-index{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
                 margin-right: nth($margenes, 9);
-                margin-left: nth($margenes, 11);
-                display: $dis-block;
             }
             .p-general-dos{
                 margin-top: nth($margenes, 5);
-                margin-right: nth($margenes, 12);
+                margin-right: nth($margenes, 9);
                 margin-left: nth($margenes, 7);
             }
         }
